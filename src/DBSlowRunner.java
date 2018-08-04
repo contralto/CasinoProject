@@ -49,7 +49,7 @@ public class DBSlowRunner extends JPanel {
         title.setBounds(-6, -13, 500, 150);
         frame.add(title);
 
-        cardLabel.setBounds(100, 80, 200, 150);                         //displays card above red rectangle
+        cardLabel.setBounds(100, 145, 150, 20);                         //displays card above red rectangle
         frame.add(cardLabel);
 
 
@@ -61,15 +61,15 @@ public class DBSlowRunner extends JPanel {
         frame.add(d2Label);
 
 
-        winLabel.setBounds(710, 355, 100, 150);                         //total earnings label
+        winLabel.setBounds(710, 426, 100, 10);                         //total earnings label
         frame.add(winLabel);
 
 
-        avgEarnLabel.setBounds(725,476, 100, 150);                     //average earnings label
+        avgEarnLabel.setBounds(725,546, 100, 10);                     //average earnings label
         frame.add(avgEarnLabel);
 
 
-        wpercLabel.setBounds(715, 416, 100, 150);                       //percentage of wins
+        wpercLabel.setBounds(715, 486, 100, 10);                       //percentage of wins
         frame.add(wpercLabel);
 
 
