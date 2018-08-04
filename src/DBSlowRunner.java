@@ -53,11 +53,11 @@ public class DBSlowRunner extends JPanel {
         frame.add(cardLabel);
 
 
-        d1Label.setBounds(350, 155, 100, 150);                          //displays number of die 1
+        d1Label.setBounds(350, 225, 10, 10);                          //displays number of die 1
         frame.add(d1Label);
 
 
-        d2Label.setBounds(465, 275, 100, 150);                          //displays number of die 2
+        d2Label.setBounds(465, 345, 10, 10);                          //displays number of die 2
         frame.add(d2Label);
 
 
