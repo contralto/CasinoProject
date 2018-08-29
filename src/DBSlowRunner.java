@@ -49,27 +49,27 @@ public class DBSlowRunner extends JPanel {
         title.setBounds(-6, -13, 500, 150);
         frame.add(title);
 
-        cardLabel.setBounds(100, 150, 150, 15);                         //displays card above red rectangle
+        cardLabel.setBounds(100, 145, 150, 20);                         //displays card above red rectangle
         frame.add(cardLabel);
 
 
-        d1Label.setBounds(350, 155, 100, 150);                          //displays number of die 1
+        d1Label.setBounds(350, 225, 10, 10);                          //displays number of die 1
         frame.add(d1Label);
 
 
-        d2Label.setBounds(465, 275, 100, 150);                          //displays number of die 2
+        d2Label.setBounds(465, 345, 10, 10);                          //displays number of die 2
         frame.add(d2Label);
 
 
-        winLabel.setBounds(710, 355, 100, 150);                         //total earnings label
+        winLabel.setBounds(710, 426, 100, 10);                         //total earnings label
         frame.add(winLabel);
 
 
-        avgEarnLabel.setBounds(725,476, 100, 150);                     //average earnings label
+        avgEarnLabel.setBounds(725,546, 100, 10);                     //average earnings label
         frame.add(avgEarnLabel);
 
 
-        wpercLabel.setBounds(715, 416, 100, 150);                       //percentage of wins
+        wpercLabel.setBounds(715, 486, 100, 10);                       //percentage of wins
         frame.add(wpercLabel);
 
 
