@@ -49,7 +49,7 @@ public class DBSlowRunner extends JPanel {
         title.setBounds(-6, -13, 500, 150);
         frame.add(title);
 
-        cardLabel.setBounds(100, 80, 200, 150);                         //displays card above red rectangle
+        cardLabel.setBounds(100, 150, 150, 15);                         //displays card above red rectangle
         frame.add(cardLabel);
 
 
