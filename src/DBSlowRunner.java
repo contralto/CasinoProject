@@ -238,11 +238,8 @@ public class DBSlowRunner extends JPanel {
         fastb.addActionListener(new ActionListener() {               //action listener
             @Override
             public void actionPerformed(ActionEvent arg0) {
-                if (total >= 10) {
-                    DBFastMode fast = new DBFastMode();                       // sets off fast mode
-                    fast.startGame();
-                }
-                else JOptionPane.showMessageDialog(frame, "Whoops! Make sure you've gone through 10 games first!");
+                DBFastMode fast = new DBFastMode();                       // sets off fast mode
+                fast.startGame();
             }
         } );
 
