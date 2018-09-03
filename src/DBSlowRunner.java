@@ -11,12 +11,11 @@ import java.lang.Math;
 public class DBSlowRunner extends JPanel {
     private static final int WIDTH = 800;                   //LOTS of variables;
     private static final int HEIGHT = 600;
-    static JTextField textfield1;
     private static int crd, earned;
     private static int bet = 10;
-    private static String suit, cNumber, cInfo;           // cNumber = A - K, cInfo = card info
+    private static String suit, cInfo;           // cNumber = A - K, cInfo = card info
     private static int d1, d2, dicesum = 0;
-    private static int gc, wcount, lcount, total = 0;
+    private static int wcount, lcount, total = 0;
     private static double wperc;
 
     private final static JLabel cardLabel = new JLabel("Card: Draw to Find Out!");           //these are all different texts that change as the game is played
@@ -50,10 +49,12 @@ public class DBSlowRunner extends JPanel {
         frame.add(title);
 
         cardLabel.setBounds(100, 145, 150, 20);                         //displays card above red rectangle
+        cardLabel.setOpaque(false);
         frame.add(cardLabel);
 
 
         d1Label.setBounds(350, 225, 10, 10);                          //displays number of die 1
+        d1Label.
         frame.add(d1Label);
 
 
@@ -73,16 +74,16 @@ public class DBSlowRunner extends JPanel {
         frame.add(wpercLabel);
 
 
-        gamecount.setBounds(10, 505, 200, 15);                         //total gamecount label
+        gamecount.setBounds(10, 510, 200, 15);                         //total gamecount label
         frame.add(gamecount);
 
-        betLabel.setBounds(10, 535, 200, 15);                          //current bet amount label
+        betLabel.setBounds(10, 545, 200, 15);                          //current bet amount label
         frame.add(betLabel);
 
-        generalLabel.setBounds(670, 363, 100, 15);                  //instruction label
+        generalLabel.setBounds(665, 361, 100, 15);                  //instruction label
         frame.add(generalLabel);
 
-        wolLabel.setBounds(230, 550, 280, 15);                         //displayed at bottom whether you won or lost
+        wolLabel.setBounds(250, 520, 300, 15);                         //displayed at bottom whether you won or lost
         frame.add(wolLabel);
 
 
