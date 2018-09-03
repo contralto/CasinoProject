@@ -54,7 +54,6 @@ public class DBSlowRunner extends JPanel {
 
 
         d1Label.setBounds(350, 225, 10, 10);                          //displays number of die 1
-        d1Label.
         frame.add(d1Label);
 
 
