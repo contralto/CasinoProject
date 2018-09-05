@@ -50,18 +50,25 @@ public class DBSlow extends JPanel {                  //https://javatutorial.net
         window.setColor(Color.GRAY.darker());             //title box
         window.fillRect(0,25,500,75);
 
-        window.setColor(Color.GRAY.darker());             //winning % box
+        //winning % box
         window.fillRect(600,470,200,40);
 
-        window.setColor(Color.GRAY.darker());             //average earnings box
+        //average earnings box
         window.fillRect(600,530,200,40);
 
-        window.setColor(Color.GRAY.darker());             //total earnings box
+        //total earnings box
         window.fillRect(600,410,200,40);
 
-        window.setColor(Color.GRAY.darker());                   //instruction box
+        //instruction box
         window.fillRect(600,350,200,40);
 
+        window.setColor(Color.LIGHT_GRAY);
+        window.fillRect(0, 497, 200, 75);
+
+        window.setColor(Color.GREEN.darker());
+        window.fillRect(100, 145, 150, 20);
+
+        window.fillRect(250, 520, 300, 15);
     }
 
     //some of the text on screen (nonchanging)

@@ -49,7 +49,6 @@ public class DBSlowRunner extends JPanel {
         frame.add(title);
 
         cardLabel.setBounds(100, 145, 150, 20);                         //displays card above red rectangle
-        cardLabel.setOpaque(false);
         frame.add(cardLabel);
 
 
@@ -73,13 +72,13 @@ public class DBSlowRunner extends JPanel {
         frame.add(wpercLabel);
 
 
-        gamecount.setBounds(10, 510, 200, 15);                         //total gamecount label
+        gamecount.setBounds(10, 510, 150, 15);                         //total gamecount label
         frame.add(gamecount);
 
-        betLabel.setBounds(10, 545, 200, 15);                          //current bet amount label
+        betLabel.setBounds(10, 545, 175, 15);                          //current bet amount label
         frame.add(betLabel);
 
-        generalLabel.setBounds(665, 361, 100, 15);                  //instruction label
+        generalLabel.setBounds(665, 362, 100, 15);                  //instruction label
         frame.add(generalLabel);
 
         wolLabel.setBounds(250, 520, 300, 15);                         //displayed at bottom whether you won or lost
@@ -253,7 +252,7 @@ public class DBSlowRunner extends JPanel {
     }
 
     //this sets/resets things depending on what's happening in the game
-    private static void setState(int s) {                                    //HUGE HELP from my dad
+    private static void setState(int s) {
         if (s == 0) {
             drawb.setEnabled(false);
 
