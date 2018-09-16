@@ -9,9 +9,8 @@ import javax.swing.JOptionPane;
 
 public class DBFastMode {                //this is Fast Mode!
     private int card, earned;                     // card # and total earnings
-    private int bet = 10;                         // bet amount
     private String suit, cInfo;                   // cInfo = card info
-    private int die1, die2, dicesum = 0;          // value of dice and their sum
+    private int dicesum = 0;          // value of dice and their sum
     private int wcount, lcount, total, gc = 0;    // counts for wins and losses, total games played, game count (rounds)
     private double wperc;                         // percentage of wins
     private String input = "";                    // eventually the number entered by the user
@@ -93,8 +92,8 @@ public class DBFastMode {                //this is Fast Mode!
 
     //Die portion of game!
     public void getDice() {
-        die1 = (int)(Math.random()*6 + 1);
-        die2 = (int)(Math.random()*6 + 1);
+        int die1 = (int) (Math.random() * 6 + 1);
+        int die2 = (int) (Math.random() * 6 + 1);
         dicesum = die1 + die2;
     }
 

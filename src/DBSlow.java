@@ -4,22 +4,9 @@
 
 import java.awt.Graphics;                   //LOTS of imports for methods needed, used for graphics
 import java.awt.Color;
-import java.awt.Canvas;
-import java.awt.Event;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.ImageIcon;
 
 public class DBSlow extends JPanel {                  //https://javatutorial.net/display-text-and-graphics-java-jframe
-    private int card, earned;
-    private int bt;
-    private String suit, cNumber, cInfo;                // cNumber = A - K, cInfo = card info
-    private int die1, die2, dicesum = 0;
-    private double gc, wcount, lcount, total = 0;
-    private double wperc;
-    private int cState;
 
     //creates "board" (green bg and size of window)
     public DBSlow() {
