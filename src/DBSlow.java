@@ -16,14 +16,13 @@ public class DBSlow extends JPanel {                  //https://javatutorial.net
     }
 
     //draws out all the shapes needed
-    public void paint(Graphics window)
-    {
+    public void paint(Graphics window)    {
         board(window);
         displayInfo(window);
     }
 
     //designs all the shapes so they can be painted
-    public void board(Graphics window) {
+    private void board(Graphics window) {
 
         window.setColor(Color.RED.darker());              //card
         window.fillRect(100,170,150,250);
@@ -59,7 +58,7 @@ public class DBSlow extends JPanel {                  //https://javatutorial.net
     }
 
     //some of the text on screen (nonchanging)
-    public void displayInfo(Graphics window) {
+    private void displayInfo(Graphics window) {
         window.setColor(Color.WHITE);
         window.drawString("Total Earnings: ",610,435);
 

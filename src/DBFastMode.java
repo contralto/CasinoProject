@@ -9,16 +9,15 @@ import javax.swing.JOptionPane;
 
 public class DBFastMode {                //this is Fast Mode!
     private int card, earned;                     // card # and total earnings
-    private String suit, cInfo;                   // cInfo = card info
     private int dicesum = 0;          // value of dice and their sum
     private int wcount, lcount, total, gc = 0;    // counts for wins and losses, total games played, game count (rounds)
     private double wperc;                         // percentage of wins
-    private String input = "";                    // eventually the number entered by the user
 
     // this is the method that begins the game; it welcomes the user, takes in the game count, and then runs the game method
     public void startGame() {
         JFrame frame = new JFrame();
         JOptionPane.showMessageDialog(frame, "Welcome to fast mode! Fast mode will continue until you decide to exit. All results will be compiled.");
+        String input;
         do {
             input = JOptionPane.showInputDialog("How many games (must be less than 1 billion) would you like to run? Press 0 to exit.");
             //System.out.println(input);
@@ -68,26 +67,6 @@ public class DBFastMode {                //this is Fast Mode!
     //Card portion of the game!
     public void getCard() {
         card = (int)(Math.random() * 51);           // will pick a random number from 0 - 51
-
-        if (card / 13 == 0)                         // determines suit of card
-            suit = "Spades";
-        else if (card / 13 == 1)
-            suit = "Clubs";
-        else if (card / 13 == 2)
-            suit = "Diamonds";
-        else suit = "Hearts";
-
-        if (card % 13 == 0)                        // determines card number/type (A, 2-10, J, Q, K) and labels card
-            cInfo = "Ace of " + suit;
-        else if (card % 13 >= 10) {
-            if (card % 13 == 10)
-                cInfo = "Jack of " + suit;
-            else if (card % 13 == 11)
-                cInfo = "Queen of " + suit;
-            else
-                cInfo = "King of " + suit;
-        }
-        else cInfo = ((card % 13) + 1) + " of " + suit;
     }
 
     //Die portion of game!
@@ -99,11 +78,10 @@ public class DBFastMode {                //this is Fast Mode!
 
     // calculates winning percentage (experimental probability of winning)
     public void calcWin() {
-        wperc = 100*(double)wcount / (wcount + lcount);
+        wperc = 100 * (double)wcount / (wcount + lcount);
         wperc = Math.round(wperc * 10);
         wperc /= 10;
     }
-
 
     public void expValue() {
         if (wcount + lcount == total) {
